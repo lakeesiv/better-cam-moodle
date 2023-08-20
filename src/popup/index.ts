@@ -1,9 +1,10 @@
 const saveOptions = () => {
-  const hideSidebar = document.getElementById("hide-sidebar")?.checked;
+  const inputEl = document.getElementById("hide-sidebar") as HTMLInputElement;
+  const hideSidebar = inputEl?.checked;
 
   chrome.storage.sync.set({ hideSidebar: hideSidebar }, () => {
     console.log("hideSidebar is set to " + hideSidebar);
-    const status = document.getElementById("status");
+    const status = document.getElementById("status") as HTMLDivElement;
     status.textContent = "Options saved.";
     setTimeout(() => {
       status.textContent = "";
@@ -15,9 +16,13 @@ const saveOptions = () => {
 // stored in chrome.storage.
 const restoreOptions = () => {
   chrome.storage.sync.get({ hideSidebar: true }, (items) => {
-    document.getElementById("hide-sidebar").checked = items.hideSidebar;
+    const hideSideBarEl = document.getElementById(
+      "hide-sidebar"
+    ) as HTMLInputElement;
+    hideSideBarEl.checked = items.hideSidebar;
   });
 };
 
 document.addEventListener("DOMContentLoaded", restoreOptions);
-document.getElementById("save").addEventListener("click", saveOptions);
+const saveButton = document.getElementById("save") as HTMLButtonElement;
+saveButton.addEventListener("click", saveOptions);

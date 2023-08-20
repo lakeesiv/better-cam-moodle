@@ -1,6 +1,6 @@
 // get the value of hideSidebar from chrome.storage
 
-const injectCss = (filepath) => {
+const injectCss = (filepath: string) => {
   const link = document.createElement("link");
   link.href = chrome.runtime.getURL(filepath);
   link.type = "text/css";

@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "author": "Lakee Sivaraya",
   "action": {
-    "default_popup": "options/index.html"
+    "default_popup": "popup/index.html"
   },
   "permissions": ["storage", "tabs"],
   "content_scripts": [
