@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@types/chrome": "^0.0.243",
+    "concurrently": "^8.2.0",
     "copyfiles": "^2.4.1",
     "rimraf": "^5.0.1",
     "tailwindcss": "^3.3.3",
@@ -8,7 +9,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "dev": "pnpm tw:watch & pnpm ts:dev",
+    "dev": "concurrently \"pnpm ts:dev\" \"pnpm tw:watch\"",
     "build": "pnpm clean && pnpm ts:build && pnpm copy-files && pnpm tw:build",
     "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.svg src/**/*.css dist/",
     "ts:build": "tsc --noEmit false --outDir dist",
