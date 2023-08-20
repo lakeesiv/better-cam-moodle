@@ -4,17 +4,42 @@
     <title>Options</title>
     <link href="tw.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-900 min-h-screen">
-    <h1 class="font-mono font-blue-500 text-4xl text-center text-shadow-lg">
-      Hi
+  <body class="bg-gray-800 w-56 p-4 text-blue-100">
+    <h1 class="font-extrabold text-blue-300 text-xl text-center text-shadow-lg">
+      Better Cam Moodle
     </h1>
-    <label>
-      <input type="checkbox" id="hide-sidebar" />
-      Hide Sidebar:
-    </label>
+    <hr class="mt-1 border-blue-300/50" />
 
-    <div id="status"></div>
-    <button id="save">Save</button>
+    <div class="flex justify-between items-center mt-4">
+      <p>Hide Sidebar</p>
+      <input type="checkbox" id="hide-sidebar" />
+    </div>
+
+    <div class="mt-2 font-mono bg-green-600 rounded">
+      <div id="status" class="m-1"></div>
+    </div>
+    <button
+      id="save"
+      class="bg-blue-500 hover:bg-blue-700 w-full text-white font-bold py-1 px-4 mt-4 rounded"
+    >
+      Save
+    </button>
+    <hr class="mt-8 border-blue-300/50" />
+    <div class="flex justify-between items-center mt-2">
+      <p>Lakee Sivaraya</p>
+      <div class="flex items-center gap-2">
+        <a href="https://lakeesiv.com" target="_blank">
+          <img src="globe.svg" class="w-4 h-4" />
+        </a>
+        <a href="https://github.com/lakeesiv" target="_blank">
+          <img src="github.svg" class="w-4 h-4" />
+        </a>
+        <a href="https://lakeesiv.com" target="_blank">
+          <img src="x.svg" class="w-4 h-4" />
+        </a>
+      </div>
+    </div>
+    <!-- <hr class="my-2 border-blue-300" /> -->
 
     <script src="index.js"></script>
   </body>
