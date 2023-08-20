@@ -1,4 +1,4 @@
-// get the value of hideSidebar from chrome.storage
+// get the value of removeSidebar from chrome.storage
 
 const injectCss = (filepath: string) => {
   const link = document.createElement("link");
@@ -11,8 +11,8 @@ const injectCss = (filepath: string) => {
 const main = () => {
   if (!chrome.storage.sync) return;
 
-  chrome.storage.sync.get({ hideSidebar: true }, (items) => {
-    if (items.hideSidebar) {
+  chrome.storage.sync.get({ removeSidebar: true }, (items) => {
+    if (items.removeSidebar) {
       // inject the css to hide the sidebar
       injectCss("styles/remove-sidebar.css");
     }

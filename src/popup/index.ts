@@ -1,9 +1,13 @@
-const saveOptions = () => {
-  const inputEl = document.getElementById("hide-sidebar") as HTMLInputElement;
-  const hideSidebar = inputEl?.checked;
+const getOptionValue = (option: string) => {
+  const inputEl = document.getElementById(option) as HTMLInputElement;
+  return inputEl.checked;
+};
 
-  chrome.storage.sync.set({ hideSidebar: hideSidebar }, () => {
-    console.log("hideSidebar is set to " + hideSidebar);
+const saveOptions = () => {
+  const removeSidebar = getOptionValue("remove-sidebar");
+
+  chrome.storage.sync.set({ removeSidebar: removeSidebar }, () => {
+    console.log("removeSidebar is set to " + removeSidebar);
     const status = document.getElementById("status") as HTMLDivElement;
     status.textContent = "Options saved.";
     setTimeout(() => {
@@ -15,11 +19,11 @@ const saveOptions = () => {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 const restoreOptions = () => {
-  chrome.storage.sync.get({ hideSidebar: true }, (items) => {
-    const hideSideBarEl = document.getElementById(
-      "hide-sidebar"
+  chrome.storage.sync.get({ removeSidebar: true }, (items) => {
+    const removeSidebarEl = document.getElementById(
+      "remove-sidebar"
     ) as HTMLInputElement;
-    hideSideBarEl.checked = items.hideSidebar;
+    removeSidebarEl.checked = items.removeSidebar;
   });
 };
 
