@@ -49,14 +49,3 @@ ul {
 .pagelayout-course #region-main .course-content .section li.activity {
   border-bottom-color: transparent !important;
 }
-
-/* HIDING DRAWER: TODO MAKE INTO JS */
-
-/* #theme_boost-drawers-courseindex {
-  width: 0px !important;
-  display: none !important;
-}
-
-#page.drawers.show-drawer-left {
-  margin-left: 0px !important;
-} */

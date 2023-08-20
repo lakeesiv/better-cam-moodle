@@ -1,4 +1,9 @@
 // get the value of removeSidebar from chrome.storage
+interface Options {
+  removeSidebar: boolean;
+  removeEditMode: boolean;
+  removeUselessLinks: boolean;
+}
 
 const injectCss = (filepath: string) => {
   const link = document.createElement("link");
@@ -11,10 +16,24 @@ const injectCss = (filepath: string) => {
 const main = () => {
   if (!chrome.storage.sync) return;
 
-  chrome.storage.sync.get({ removeSidebar: true }, (items) => {
+  const options: Options = {
+    removeSidebar: true,
+    removeEditMode: true,
+    removeUselessLinks: true,
+  };
+
+  chrome.storage.sync.get(options, (items) => {
     if (items.removeSidebar) {
-      // inject the css to hide the sidebar
-      injectCss("styles/remove-sidebar.css");
+      console.log("remove sidebar");
+      injectCss("styles/optional/remove-sidebar.css");
+    }
+    if (items.removeEditMode) {
+      console.log("remove edit mode");
+      injectCss("styles/optional/remove-edit-mode.css");
+    }
+    if (items.removeUselessLinks) {
+      console.log("remove useless links");
+      injectCss("styles/optional/remove-useless-links.css");
     }
   });
 };

@@ -1,0 +1,9 @@
+/* Remove Switch */
+form.editmode-switch-form {
+  display: none !important;
+}
+
+/* Remove Extra Space */
+div#usernavigation.navbar-nav div.divider {
+  display: none !important;
+}
