@@ -1,0 +1,8 @@
+#theme_boost-drawers-courseindex {
+  width: 0px !important;
+  display: none !important;
+}
+
+#page.drawers.drawers.show-drawer-left.drag-container {
+  margin-left: 0px !important ;
+}

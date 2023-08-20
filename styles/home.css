@@ -1,0 +1,16 @@
+/* Removes Dashboard Header */
+header#page-header div {
+  display: none !important;
+}
+
+/* Make Search Input Nice */
+input.form-control.withclear.rounded {
+  border-radius: 10px !important;
+  border-color: rgba(205, 213, 219, 0.3) !important;
+}
+
+/* Adding Gap Between Show Text and All Dropdown */
+div#paging-control-limit-container-4 {
+  gap: 12px !important;
+  margin-top: 8px !important;
+}

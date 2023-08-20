@@ -1,0 +1,66 @@
+/* Hides the University logo  */
+span.logo,
+span.logo-compact {
+  display: none !important;
+}
+
+/* Removed Colored Border */
+.navbar.fixed-top {
+  border-bottom: none !important;
+}
+
+/*  Hides the card images */
+.myoverviewimg,
+.list-view-bgimage {
+  display: none !important;
+}
+
+/*  Hides the card icons */
+div.summary-icons {
+  display: none !important;
+}
+
+/* Hides the card category name */
+span.categoryname {
+  display: none !important;
+}
+
+/* Fix Padding with Card Menu and Margin */
+.card-deck .card .card-footer.dashboard-card-footer {
+  padding: 0 !important;
+}
+
+.course-action-menu {
+  margin-left: auto !important; /* Pushes the menu to the right */
+  margin-right: 2px !important;
+}
+
+.card-footer.dashboard-card-footer.menu .ml-auto.dropdown {
+  padding-top: 5px !important; /* Allows menu icon to be centered */
+}
+
+.card-deck .card .card-body {
+  padding: 0.8rem !important;
+  padding-bottom: 0.6rem !important;
+}
+
+/* Fix Padding with List Group */
+li.list-group-item {
+  padding: 0 !important;
+}
+
+/* Make Icons Smaller */
+img.activityicon,
+img.icon {
+  width: 14px !important;
+}
+div.activityiconcontainer {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+/* Make Drop Down Buttons Nice */
+button.btn-outline-secondary.dropdown-toggle {
+  border-color: rgba(205, 213, 219, 0.3) !important;
+  border-radius: 10px !important;
+}

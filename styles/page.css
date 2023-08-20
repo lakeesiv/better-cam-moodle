@@ -1,0 +1,62 @@
+span.logo,
+span.logo-compact {
+  display: none !important;
+}
+
+h3.sectionname {
+  font-size: larger !important;
+}
+
+a.icons-collapse-expand {
+  font-size: x-small !important;
+}
+
+div.course-description-item {
+  font-size: medium !important;
+}
+
+/* Fix Text Box Sizing */
+.activity-altcontent.course-description-item {
+  font-size: 14px !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Fix Margin of <p/> inside text box */
+div.no-overflow p:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+span.instancename {
+  font-size: medium !important;
+}
+
+/* Remove Padding From Region Top */
+section#region-main {
+  padding-top: 0px !important;
+}
+
+ul {
+  font-size: 15px !important;
+}
+
+/* Fix Activity Item Spacing and Border */
+.activity .activity-item {
+  padding: 0 !important;
+}
+.pagelayout-course #region-main .course-content .section li.activity {
+  border-bottom-color: transparent !important;
+}
+
+/* HIDING DRAWER: TODO MAKE INTO JS */
+
+/* #theme_boost-drawers-courseindex {
+  width: 0px !important;
+  display: none !important;
+}
+
+#page.drawers.show-drawer-left {
+  margin-left: 0px !important;
+} */
