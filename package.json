@@ -10,7 +10,7 @@
     "clean": "rimraf dist/",
     "dev": "pnpm tw:watch & pnpm ts:dev",
     "build": "pnpm clean && pnpm ts:build && pnpm copy-files && pnpm tw:build",
-    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.css dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.svg src/**/*.css dist/",
     "ts:build": "tsc --noEmit false outDir dist",
     "ts:dev": "tsc --watch",
     "tw:watch": "tailwindcss -i src/styles/tw.css -o src/popup/tw.css --watch",
