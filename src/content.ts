@@ -15,6 +15,7 @@ const main = () => {
     removeSidebar: true,
     removeEditMode: true,
     removeUselessLinks: true,
+    removeDashboardRigthtBlock: true,
   };
 
   chrome.storage.sync.get(options, (items) => {
@@ -26,6 +27,9 @@ const main = () => {
     }
     if (items.removeUselessLinks) {
       injectCss("styles/optional/remove-useless-links.css");
+    }
+    if (items.removeDashboardRigthtBlock) {
+      injectCss("styles/optional/remove-dashboard-right-block.css");
     }
   });
 };
