@@ -1,7 +1,8 @@
-interface Options {
+export interface Options {
   removeSidebar: boolean;
   removeEditMode: boolean;
   removeUselessLinks: boolean;
+  autoLogin: boolean;
 }
 
 const getOptionValue = (option: string) => {
@@ -26,6 +27,7 @@ const saveOptions = () => {
     removeSidebar: getOptionValue("remove-sidebar"),
     removeEditMode: getOptionValue("remove-edit-mode"),
     removeUselessLinks: getOptionValue("remove-useless-links"),
+    autoLogin: getOptionValue("auto-login"),
   };
 
   chrome.storage.sync.set(options, () => {
@@ -44,12 +46,14 @@ const restoreOptions = () => {
     removeSidebar: true,
     removeEditMode: true,
     removeUselessLinks: true,
+    autoLogin: true,
   };
 
   chrome.storage.sync.get(options, (items) => {
     setOptionValue("remove-sidebar", items.removeSidebar);
     setOptionValue("remove-edit-mode", items.removeEditMode);
     setOptionValue("remove-useless-links", items.removeUselessLinks, false);
+    setOptionValue("auto-login", items.autoLogin);
   });
 };
 
