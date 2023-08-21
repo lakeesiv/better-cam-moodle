@@ -1,4 +1,4 @@
-export interface Options {
+interface Options {
   removeSidebar: boolean;
   removeEditMode: boolean;
   removeUselessLinks: boolean;
