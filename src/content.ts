@@ -1,5 +1,8 @@
-// get the value of removeSidebar from chrome.storage
-
+/**
+ * Injects a CSS file into the page.
+ *
+ * @param {string} filepath path to the CSS file
+ */
 const injectCss = (filepath: string) => {
   const link = document.createElement("link");
   link.href = chrome.runtime.getURL(filepath);
@@ -18,6 +21,7 @@ const main = () => {
     removeDashboardRigthtBlock: true,
   };
 
+  // Inject CSS files
   chrome.storage.sync.get(options, (items) => {
     if (items.removeSidebar) {
       injectCss("styles/optional/remove-sidebar.css");
