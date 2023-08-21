@@ -1,6 +1,6 @@
 /* Hide Right Block */
 section#side-pre {
-  display: none!;
+  display: none !important;
 }
 
 /* Make Main Block Full Size (mb-3 to get higher selectivity) */
