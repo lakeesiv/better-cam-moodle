@@ -49,3 +49,18 @@ ul {
 .pagelayout-course #region-main .course-content .section li.activity {
   border-bottom-color: transparent !important;
 }
+
+/* === Side Bar Ajustments === */
+
+.courseindex .courseindex-item.courseindex-section-title a {
+  font-size: 14px !important;
+}
+li.courseindex-item {
+  font-size: 13px;
+}
+
+a.courseindex-link.text-truncate {
+  overflow: visible !important;
+  text-overflow: initial !important;
+  white-space: normal !important;
+}
