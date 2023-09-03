@@ -12,12 +12,12 @@ a.icons-collapse-expand {
 }
 
 div.course-description-item {
-  font-size: medium !important;
+  font-size: 14.5px !important;
 }
 
 /* Fix Text Box Sizing */
 .activity-altcontent.course-description-item {
-  font-size: 14px !important;
+  font-size: 13.25px !important;
   margin-top: 1rem !important;
   margin-bottom: 0.5rem !important;
   padding-top: 0.5rem !important;
@@ -30,7 +30,11 @@ div.no-overflow p:not(:last-child) {
 }
 
 span.instancename {
-  font-size: medium !important;
+  font-size: 13.75px !important;
+}
+
+div.course-description-item.summarytext div div ul li {
+  font-size: 13.75px !important;
 }
 
 /* Remove Padding From Region Top */
@@ -46,6 +50,12 @@ ul {
 .activity .activity-item {
   padding: 0 !important;
 }
+
+.pagelayout-course #region-main .course-content .section li.activity,
+.pagelayout-course #region-main .course-content .single-section li.activity {
+  margin: 0 0 0.75rem !important;
+}
+
 .pagelayout-course #region-main .course-content .section li.activity {
   border-bottom-color: transparent !important;
 }
@@ -63,4 +73,17 @@ a.courseindex-link.text-truncate {
   overflow: visible !important;
   text-overflow: initial !important;
   white-space: normal !important;
+}
+
+li#section-0 {
+  padding-top: 0 !important;
+}
+
+#page #page-header .page-context-header .page-header-headings h1 {
+  font-size: large;
+}
+
+li.nav-item a.nav-link {
+  font-size: 13px !important;
+  padding: 0.5rem !important;
 }
