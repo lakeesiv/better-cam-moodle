@@ -15,7 +15,7 @@
     "tw:dev": "tailwindcss -i src/styles/tw.css -o src/popup/tw.css --watch",
     "ts:build": "tsc --noEmit false --outDir dist",
     "tw:build": "tailwindcss -i src/styles/tw.css -o dist/popup/tw.css --minify",
-    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.svg src/**/*.css dist/",
+    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.png src/**/*.svg src/**/*.css dist/",
     "zip": "cd dist && zip -r ../dist.zip . && cd .."
   }
 }
