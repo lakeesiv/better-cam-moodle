@@ -30,11 +30,7 @@ div.no-overflow p:not(:last-child) {
 }
 
 span.instancename {
-  font-size: 13.75px !important;
-}
-
-div.course-description-item.summarytext div div ul li {
-  font-size: 13.75px !important;
+  font-size: 14px !important;
 }
 
 /* Remove Padding From Region Top */
