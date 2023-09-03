@@ -7,3 +7,4 @@ tmp/
 .idea
 src/**/*.js
 src/popup/tw.css
+dist.zip

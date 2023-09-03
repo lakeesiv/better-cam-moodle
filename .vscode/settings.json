@@ -1,6 +1,7 @@
 {
   "files.exclude": {
     "node_modules": true,
-    "src/**/*.js": true
+    "src/**/*.js": true,
+    "dist.zip": true
   }
 }

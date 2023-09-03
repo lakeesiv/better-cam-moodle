@@ -9,12 +9,13 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "dev": "concurrently \"pnpm ts:dev\" \"pnpm tw:watch\"",
-    "build": "pnpm clean && pnpm ts:build && pnpm copy-files && pnpm tw:build",
-    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.svg src/**/*.css dist/",
-    "ts:build": "tsc --noEmit false --outDir dist",
+    "dev": "concurrently \"pnpm ts:dev\" \"pnpm tw:dev\"",
+    "build": "pnpm clean && pnpm ts:build && pnpm copy-files && pnpm tw:build && pnpm zip",
     "ts:dev": "tsc --watch",
-    "tw:watch": "tailwindcss -i src/styles/tw.css -o src/popup/tw.css --watch",
-    "tw:build": "tailwindcss -i src/styles/tw.css -o dist/popup/tw.css --minify"
+    "tw:dev": "tailwindcss -i src/styles/tw.css -o src/popup/tw.css --watch",
+    "ts:build": "tsc --noEmit false --outDir dist",
+    "tw:build": "tailwindcss -i src/styles/tw.css -o dist/popup/tw.css --minify",
+    "copy-files": "copyfiles -u 1 src/**/*.html src/**/*.json src/**/*.svg src/**/*.css dist/",
+    "zip": "cd dist && zip -r ../dist.zip . && cd .."
   }
 }
