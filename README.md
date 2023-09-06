@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lakeesiv/better-cam-moodle/master/img/logo.png" width="150" 
+  <img src="https://raw.githubusercontent.com/lakeesiv/better-cam-moodle/master/img/logo1.png" width="150" 
   />
 </p>
 
