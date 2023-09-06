@@ -51,3 +51,27 @@ Remove the edit mode button at the top right corner.
 ### Auto Login
 
 Automatically login to moodle when you visit the site. No more clicking on the login using Raven button!
+
+# Development
+
+Install the dependencies
+
+```bash
+pnpm install
+```
+
+Run the dev server
+
+```bash
+pnpm dev
+```
+
+Open the `src` directory in Chrome extensions and load the unpacked extension.
+
+To build the extension, run
+
+```bash
+pnpm build
+```
+
+You can then load the extension from the `dist` directory.
