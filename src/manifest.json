@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Better Cam Moodle",
   "description": "Improves the Style of the Cambridge Moodle. Makes everything a bit more compact and readable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Lakee Sivaraya",
   "icons": {
     "16": "icons/icon16.png",
