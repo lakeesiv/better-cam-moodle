@@ -1,5 +1,5 @@
-/* Remove 3rd, 4th & 5th children of ul.navbar-nav */
-ul.navbar-nav.d-none.d-md-flex li:nth-child(4),
+/* Remove 4th & 5th children of ul.navbar-nav */
+/* ul.navbar-nav.d-none.d-md-flex li:nth-child(4), */
 ul.navbar-nav.d-none.d-md-flex li:nth-child(5),
 ul.navbar-nav.d-none.d-md-flex li:nth-child(6),
 ul.navbar-nav.d-none.d-md-flex li:nth-child(7) {
