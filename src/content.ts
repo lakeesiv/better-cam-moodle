@@ -19,6 +19,7 @@ const main = () => {
     removeEditMode: true,
     removeUselessLinks: true,
     removeDashboardRigthtBlock: true,
+    cleanupRightBlock: true,
   };
 
   // Inject CSS files
@@ -34,6 +35,9 @@ const main = () => {
     }
     if (items.removeDashboardRigthtBlock) {
       injectCss("styles/optional/remove-dashboard-right-block.css");
+    }
+    if (items.cleanupRightBlock) {
+      injectCss("styles/optional/cleanup-right-block.css");
     }
   });
 };

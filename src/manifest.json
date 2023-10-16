@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Better Cam Moodle",
   "description": "Improves the Style of the Cambridge Moodle. Makes everything a bit more compact and readable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Lakee Sivaraya",
   "icons": {
     "16": "icons/icon16.png",
@@ -47,7 +47,8 @@
         "styles/optional/remove-sidebar.css",
         "styles/optional/remove-edit-mode.css",
         "styles/optional/remove-useless-links.css",
-        "styles/optional/remove-dashboard-right-block.css"
+        "styles/optional/remove-dashboard-right-block.css",
+        "styles/optional/cleanup-right-block.css"
       ],
       "matches": ["https://www.vle.cam.ac.uk/*"],
       "use_dynamic_url": true

@@ -3,6 +3,7 @@ interface Options {
   removeEditMode: boolean;
   removeUselessLinks: boolean;
   removeDashboardRigthtBlock: boolean;
+  cleanupRightBlock: boolean;
   autoLogin: boolean;
 }
 
@@ -46,6 +47,7 @@ const saveOptions = () => {
     removeUselessLinks: getOptionValue("remove-useless-links"),
     removeDashboardRigthtBlock: getOptionValue("remove-dashboard-right-block"),
     autoLogin: getOptionValue("auto-login"),
+    cleanupRightBlock: getOptionValue("cleanup-right-block"),
   };
 
   chrome.storage.sync.set(options, () => {
@@ -67,12 +69,14 @@ const restoreOptions = () => {
     removeUselessLinks: true,
     removeDashboardRigthtBlock: true,
     autoLogin: true,
+    cleanupRightBlock: true,
   };
 
   chrome.storage.sync.get(options, (items) => {
     setOptionValue("remove-sidebar", items.removeSidebar);
     setOptionValue("remove-edit-mode", items.removeEditMode);
     setOptionValue("remove-useless-links", items.removeUselessLinks);
+    setOptionValue("cleanup-right-block", items.cleanupRightBlock);
     setOptionValue(
       "remove-dashboard-right-block",
       items.removeDashboardRigthtBlock

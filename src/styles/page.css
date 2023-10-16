@@ -83,3 +83,7 @@ li.nav-item a.nav-link {
   font-size: 13px !important;
   padding: 0.5rem !important;
 }
+
+.card-text {
+  font-size: 14px !important;
+}
