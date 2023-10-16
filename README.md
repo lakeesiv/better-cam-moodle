@@ -59,6 +59,10 @@ Remove the edit mode button at the top right corner.
 
 Automatically login to moodle when you visit the site. No more clicking on the login using Raven button!
 
+### Cleanup Right Block
+
+This will remove all the useless links in the right block of the dashboard, so you will se the panopto links first, preventing you from having to scroll down to see them.
+
 # Development
 
 Install the dependencies
